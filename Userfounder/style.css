@@ -1,5 +1,5 @@
 body {
-  background: #000000;
+  background: #090909;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,7 @@ body {
 }
 
 .card {
+
   position: relative;
   width: 200px;
   height: 300px;
@@ -63,4 +64,8 @@ body {
   font-size: 14px;
   color: #ddd;
   line-height: 1.4;
+}
+
+p{
+    color: white;
 }

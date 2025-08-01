@@ -84,7 +84,13 @@ inp.addEventListener("input", function () {
   let newUsers = users.filter((user) => {
     return user.name.startsWith(inp.value);
   });
-  
-document.querySelector(".cards").innerHTML = "";
-showUsers(newUsers);
+
+  const cardContainer = document.querySelector(".cards");
+  cardContainer.innerHTML = "";
+
+  if(newUsers.length===0){
+    cardContainer.innerHTML="<p>User not found</p>"
+  }else{
+    showUsers(newUsers)
+  }
 });
